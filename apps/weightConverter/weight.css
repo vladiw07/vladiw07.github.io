@@ -10,7 +10,7 @@ body {
     justify-content: center; /* Center everything horizontally */
     align-items: center;
     overflow: hidden;
-    touch-action: none;
+    
     background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;

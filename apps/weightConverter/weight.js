@@ -1,6 +1,3 @@
-document.body.addEventListener('touchmove', function (e) {
-    e.preventDefault();
-});
 
 
 const convertToKg = document.querySelector('.kg');
