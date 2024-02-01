@@ -10,11 +10,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html{
+  width: 100%;
+ 
+}
 body {
   font-family: "Poppins",sans-serif;
   overflow-x: hidden;
   outline: none;
+  width: 100%;
 }
 .navbar{
   position: sticky;
