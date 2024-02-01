@@ -1,49 +1,49 @@
-body{
-    background: linear-gradient(to top,rgba(3, 3, 196, 0.747), rgb(0, 137, 228));
+body {
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: aliceblue;
-    
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins",sans-serif,Arial, sans-serif;
 }
 
-.container-wrapper{
+.container-wrapper {
     display: flex;
     justify-content: center;
-    }
+}
 
-.container{
+.container {
+    
     position: relative;
     width: 300px;
     height: 455px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.289);
     backdrop-filter: blur(30px);
     border-radius: 16px;  
-    top: 50px;
+    top: 0px;
     padding: 20px;
-    border: 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-color: rgb(129, 127, 127), 201;
-    
-
+    padding-bottom: 60px;
 }
 
-
-
-.search-box{
+.search-box {
     position: relative;
     width: 100%;
     height: 40px;
     border-radius: 10px;
-    
-
     top: -5px;
-
-    
     display: flex;
-    
 }
-.search-box input{
+
+.search-box input {
     position: absolute;
     width: 70%;
     height: 100%;
@@ -55,17 +55,13 @@ body{
     font-size: 20px;
     color: #000000;
     padding: 0 40px;
-    
-    
-    
-    
 }
 
-.search-box input::placeholder{
+.search-box input::placeholder {
     color: #000000;
 }
 
-.search-box button{
+.search-box button {
     position: absolute;
     top: 10px;
     left: 250px;
@@ -75,10 +71,9 @@ body{
     color: #000000;
     font-size: 25px;
     cursor: pointer;
-    
 }
 
-.search-box i{
+.search-box i {
     position: absolute;
     color: #000000;
     font-size: 23px;
@@ -86,20 +81,39 @@ body{
     left: 10px;
 }
 
-.degrees{
+.degrees {
     color: #000000;
     font-size: 64px;
     font-family: Verdana;
     position: relative;
-    top: 20px;
-    left: 10px;
     
     font-weight: 700;
+    text-align: center;
 }
-.information{
+
+.information {
+    text-align: center;
     position: absolute;
     top: 200px;
     font-size: 28px;
     color: #000000;
     font-weight: 700;
+    padding-right: 30px;
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .container-wrapper{
+        transform: scale(0.7);
+    }
+    }
+    @media only screen and (max-width: 700px) {
+        .container-wrapper{
+            transform: scale(0.5);
+        }
+        }
+        @media only screen and (max-width: 500px) {
+            .container-wrapper{
+                transform: scale(0.3);
+            }
+            }
