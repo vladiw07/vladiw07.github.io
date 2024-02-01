@@ -119,7 +119,7 @@ body {
 #hero-background{
   position: relative;
   width: 100%;
-  height: 610px;
+  height: 100%;
   object-fit: cover;
   z-index: -1;
 }
