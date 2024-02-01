@@ -112,7 +112,7 @@ body {
   background-image: url(images/hero-background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; /* Change this line to cover */
+  background-size: cover; 
 }
 
 
