@@ -42,7 +42,7 @@ body {
     border-radius: 9px;
     border: none;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    background-color: #cfcfcf9d;
+    background-color: transparent;
     font-size: 20px;
     margin-top: 50px;
 }
@@ -54,7 +54,7 @@ body {
     border-radius: 9px;
     border: none;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    background-color: #a8a6a69d;
+    background-color: transparent;
 
 
 }
@@ -100,13 +100,21 @@ input[type=number] {
 
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 500px) {
     .main-container{
         transform: scale(0.7);
     }
+}
+@media only screen and (max-width: 450px) {
+    .main-container{
+        transform: scale(0.7);
     }
-    @media only screen and (max-width: 750px) {
-        .main-container{
-            transform: scale(0.4);
-        }
-        }
+}
+@media only screen and (max-height: 450px) {
+    .main-container{
+        transform: scale(0.7);
+    }
+}
+
+
+    

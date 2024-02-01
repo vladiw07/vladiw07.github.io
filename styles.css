@@ -9,6 +9,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+
 }
 html{
   width: 100%;
@@ -19,6 +21,7 @@ body {
   overflow-x: hidden;
   outline: none;
   width: 100%;
+  text-decoration: none;
 }
 .navbar{
   position: sticky;
