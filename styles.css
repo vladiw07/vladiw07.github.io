@@ -25,6 +25,7 @@ body {
   top: 0;
   z-index: 1;
 }
+
 .logo {
   color: var(--color-white);
   font-size: 30px;
@@ -144,7 +145,7 @@ background: linear-gradient(135deg, #757575, #050505);
 .hero-cards-ul li {
   width: 260px;
   height: 150px;
-
+  
 
 /*
 * Created with https://www.css-gradient.com
@@ -521,6 +522,11 @@ background: linear-gradient(135deg, #B58D22, #E57303);
   .menu-bar ul {
     display: none;
   }
+  .h1-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    }
   }
 
 
@@ -529,3 +535,8 @@ background: linear-gradient(135deg, #B58D22, #E57303);
       padding-top: 50px;
     }
     }
+@media only screen and (max-width: 959px) {
+  .removedElements{
+    display: none;
+  }
+  }
