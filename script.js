@@ -15,7 +15,13 @@ window.onclick = function(event) {
         }
     }
 }
-
+document.querySelector("#aboutUsButton").addEventListener("click", function() {
+    document.querySelector(".footer").scrollIntoView({ behavior: "smooth" });
+});
+document.querySelector("#newsletterButton").addEventListener("click", function() {
+    document.querySelector(".newsletter-section").scrollIntoView({ behavior: "smooth" });
+    console.log('da')
+});
 
 document.querySelector(".homeButton").addEventListener("click", function() {
     document.querySelector(".section-1").scrollIntoView({ behavior: "smooth" });
@@ -29,3 +35,13 @@ document.querySelector(".appsButton").addEventListener("click", function() {
     document.querySelector(".hero-section").scrollIntoView({ behavior: "smooth" });
 });
 
+
+
+
+
+const form = document.querySelector('.newsletter-form');
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    document.getElementById('newsletterinput').value = '';
+})

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
-    <script src="script.js" defer></script>
+    
     
   </head>
   <body>
@@ -18,8 +18,17 @@
         </div>
         <ul>
           <li ><a class="homeButton">Home</a></li>
-          <li ><a class="appsButton">Apps</a></li>
-          <li><a href="#">Calculators <i class="fas fa-caret-down"></i></a>
+          <li style="cursor: pointer;"><a>Converters <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+
+               
+              </ul>
+            </div></li>
+          <li style="cursor: pointer;"><a>Calculators <i class="fas fa-caret-down"></i></a>
             <div class="dropdown-menu">
               <ul>
                 <li><a href="#">Calculator</a></li>
@@ -30,21 +39,13 @@
               </ul>
             </div></li>
           
-          <li><a href="#">Converters <i class="fas fa-caret-down"></i></a>
+          <li><a style="cursor: pointer;" id="newsletterButton">Newsletter</i></a>
   
-              <div class="dropdown-menu">
-                  <ul>
-                    <li><a href="#">Temperature Converter</a></li>
-                    <li><a href="#">Currency Converter</a></li>
-                    <li><a href="#">Weight Converter </a></li>
-  
-                   
-                  </ul>
-                </div>
+              
           </li>
           
           </li>
-          <li><a href="#">About Us</a></li>
+          <li><a style="cursor: pointer;" id="aboutUsButton">About Us</a></li>
         </ul>
       </div>
     </section>
@@ -52,7 +53,7 @@
       <h2 id="h2">Welcome to EasyTools</h2>
       <p>At EasyTools, we provide a collection of handy calculators and converters to simplify your daily tasks. Whether you need to calculate interest rates, percentages, or convert units, we've got you covered.</p><br>
       <p>Our user-friendly tools are designed to make your life easier. Explore our categories:</p> <br>
-      <ul>
+      <ul id="ul1">
           <li><strong>Calculators:</strong> Quick and accurate calculations for various scenarios.</li>
           <li><strong>Converters:</strong> Effortlessly convert between different units and currencies.</li>
       </ul>
@@ -64,6 +65,11 @@
     </div>
     </section>
     <section class="hero-section">
+      <div class="hero-text-information">
+        <h3>Explore Our Handy Apps</h3>
+      </div>
+
+
       
       <ul class="hero-cards-ul">
         <li>
@@ -88,13 +94,131 @@
           </div>
           <img src="images/language-icon.png" id="icon-3" alt="">
         </li>
+
+        <li>
+          <div style="position: relative; left: 10px;" class="text-card-div">
+            Recipe Finder
+            <i class="fas fa-arrow-right arrow-3"></i>
+          </div>
+          <img src="images/recipe.png" id="icon-3" alt="">
+        </li>
+          
+      </ul>
+    </section>
+    <section class="hero-section-2">
+      <div class="hero-text-information-2">
+        <h4>Converters</h4>
+        <p><strong>Temperature Converter:</strong> Convert temperatures between Celsius, Fahrenheit, and Kelvin with ease.</p>
+    <p><strong>Currency Converter:</strong> Instantly convert currencies for travel or business needs.</p>
+    <p><strong>Weight Converter:</strong> Quickly switch between pounds, kilograms, and ounces.</p>
+      </div>
+
+
+      
+      <ul class="hero-cards-ul hero-cards-ul-2">
+        
+        <li>
+          <div class="text-card-div">
+            Temperature Converter
+            <i style="padding-right: 20px;" class="fas fa-arrow-right"></i>
+          </div>
+          <img id="tempIcon" src="images/temperature.png" alt="">
+          
+        </li>
+
+        <li>
+          <div class="text-card-div">
+            Currency Converter
+            <i class="fas fa-arrow-right arrow-3"></i>
+          </div>
+          <img id="currencyIcon" src="images/currency.png" alt="">
+        </li>
+
+        <li>
+          <div style="position: relative; left: 10px;" class="text-card-div">
+            Weight Converter
+            <i class="fas fa-arrow-right arrow-3"></i>
+          </div>
+          <img id="weightIcon" src="images/weight.png" alt="">
+          
+        </li>
+          
+      </ul>
+    </section>
+
+    <section class="hero-section-3">
+      <div class="hero-text-information-2">
+        <h4>Calculators</h4>
+        
+    <p><strong>Calculator:</strong> Quickly add, subtract, multiply, and divide numbers with precision.</p>
+    <p><strong>Percentage Calculator:</strong> Easily determine percentages, discounts, and markups for your financial needs.</p>
+    <p><strong>Interest Rate Calculator:</strong> Calculate interest rates, payments, and savings with accuracy for financial planning.</p>
+
+
+      
+      <ul class="hero-cards-ul hero-cards-ul-3">
+        
+        <li>
+          <div class="text-card-div">
+            Calculator
+            <i style="padding-right: 20px;" class="fas fa-arrow-right"></i>
+          </div>
+          <img id="calculatorIcon" src="images/calculator.png" alt="">
+          
+        </li>
+
+        <li>
+          <div class="text-card-div">
+            Percentage Calculator
+            <i class="fas fa-arrow-right arrow-3"></i>
+          </div>
+          <img id="percentageIcon" src="images/free-percent-icon-939-thumb.png" alt="">
+        </li>
+
+        <li>
+          <div style="position: relative; left: 10px;" class="text-card-div">
+            Interest Rate Calculator
+            <i class="fas fa-arrow-right arrow-3"></i>
+          </div>
+          <img id="interestRateIcon" src="images/interestRate.webp" alt="">
+          
+        </li>
           
       </ul>
     </section>
     
+    
+    
 
 
 
+    <section class="newsletter-section">
+      <div class="newsletter-container">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Stay updated with the latest news and updates from our website.</p>
+          <form class="newsletter-form" action="#" method="post">
+              <input id="newsletterinput" type="email" name="email" placeholder="Your Email" required>
+              <button type="submit">Subscribe</button>
+          </form>
+      </div>
+  </section>
+    <footer class="footer">
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <!-- Additional Footer Information -->
+      <p class="footer-info">
+          © 2024 Vladislav Wanli. All rights reserved. | <a>Privacy Policy</a> | <a>Terms of Use</a>
+      </p>
+  </footer>
     </div>
+
+
+    <script src="script.js"></script>
   </body>
 </html>
