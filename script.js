@@ -15,3 +15,17 @@ window.onclick = function(event) {
         }
     }
 }
+
+
+document.querySelector(".homeButton").addEventListener("click", function() {
+    document.querySelector(".section-1").scrollIntoView({ behavior: "smooth" });
+});
+
+document.querySelector(".logo").addEventListener("click", function() {
+    document.querySelector(".section-1").scrollIntoView({ behavior: "smooth" });
+});
+
+document.querySelector(".appsButton").addEventListener("click", function() {
+    document.querySelector(".hero-section").scrollIntoView({ behavior: "smooth" });
+});
+
