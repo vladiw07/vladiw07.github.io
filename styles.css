@@ -119,6 +119,7 @@ background: linear-gradient(135deg, #757575, #050505);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; 
+  padding-bottom: 80px;
 }
 #hero-background{
   position: relative;
@@ -215,8 +216,10 @@ background: linear-gradient(135deg, #C14353, #C74E2E);
   font-size: 20px;
   font-weight: 100;
   padding-bottom: 160px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+ 
+
 /*
 * Created with https://www.css-gradient.com
 * Gradient link: https://www.css-gradient.com/?c1=7bbc26&c2=e4ed87&gt=l&gd=dtl
@@ -379,7 +382,7 @@ footer {
   height: fit-content;
   min-height: 500px;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 
 background: #C679F7;
 background: linear-gradient(135deg, #C679F7, #7E4EB7);
@@ -443,7 +446,7 @@ background: linear-gradient(135deg, #C679F7, #7E4EB7);
   height: fit-content;
   min-height: 500px;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 
 background: #058ED8;
 background: linear-gradient(135deg, #058ED8, #604CB2);

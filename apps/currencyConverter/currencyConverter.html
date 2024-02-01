@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <title>Currency Converter</title>
+    <style>
+        body {
+        font-family: "Poppins", sans-serif;
+        background-color: aliceblue;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    #converter {
+        max-width: 400px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        background-color: #cfcfcf9d;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+    }
+
+        h1 {
+            text-align: center;
+            color: black;
+            font-weight:200;
+        }
+
+        select, input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #a3a3a3;
+            border-radius: 20px;
+            border: none;
+            color: black;
+            outline: none;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+            
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #54575a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        button:hover{
+            background-color:#333536;
+        }
+
+        #result {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 10px;
+            color: black;
+        }
+        #amount{
+            width: 380px;
+        }
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+}
+    </style>
+</head>
+<body>
+    <div id="converter">
+        <h1>Currency Converter</h1>
+        <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="BGN">BGN</option>
+        </select>
+        <input type="number" id="amount" placeholder="Enter amount">
+        <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="BGN">BGN</option>
+        </select>
+        <button onclick="convertCurrency()">Convert</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function convertCurrency() {
+            const fromCurrency = document.getElementById("fromCurrency").value;
+            const toCurrency = document.getElementById("toCurrency").value;
+            const amount = parseFloat(document.getElementById("amount").value);
+
+            // You can fetch the exchange rates from an API or use a predefined object.
+            const exchangeRates = {
+                USD: {
+                    EUR: 0.91,
+                    GBP: 0.78,
+                    BGN: 1.78,
+                },
+                EUR: {
+                    USD: 1.1,
+                    GBP: 0.88,
+                    BGN: 1.96,
+                },
+                GBP: {
+                    USD: 1.36,
+                    EUR: 1.13,
+                    BGN: 2.27,
+                },
+                BGN: {
+                    USD: 0.56,
+                    EUR: 0.51,
+                    GBP: 0.44,
+                },
+            };
+
+            if (!exchangeRates[fromCurrency] || !exchangeRates[fromCurrency][toCurrency]) {
+                document.getElementById("result").textContent = "Invalid currency conversion.";
+                return;
+            }
+
+            const result = (amount * exchangeRates[fromCurrency][toCurrency]).toFixed(1);
+            document.getElementById("result").textContent = `${amount} ${fromCurrency} = ${result} ${toCurrency}`;
+        }
+    </script>
+</body>
+</html>

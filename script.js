@@ -1,3 +1,10 @@
+
+const form = document.querySelector('.newsletter-form');
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    document.getElementById('newsletterinput').value = '';
+})
 function toggleDropdown() {
     var dropdown = document.getElementById("myDropdown");
     dropdown.classList.toggle("show");
@@ -15,6 +22,9 @@ window.onclick = function(event) {
         }
     }
 }
+document.querySelector("#contactUs").addEventListener("click", function() {
+    document.querySelector(".footer").scrollIntoView({ behavior: "smooth" });
+});
 document.querySelector("#aboutUsButton").addEventListener("click", function() {
     document.querySelector(".footer").scrollIntoView({ behavior: "smooth" });
 });
@@ -39,9 +49,3 @@ document.querySelector(".appsButton").addEventListener("click", function() {
 
 
 
-const form = document.querySelector('.newsletter-form');
-
-form.addEventListener('submit',(e)=>{
-    e.preventDefault();
-    document.getElementById('newsletterinput').value = '';
-})

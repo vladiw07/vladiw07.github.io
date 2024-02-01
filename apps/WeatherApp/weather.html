@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-wrapper">
+    <div class="container">
+        
+        <div class="search-box">
+            <i class="bx bxs-map"></i>
+            <input id="input" type="text" placeholder="Enter Your Location">
+            <button onclick="submit()" class="bx bx-search"></button>
+        </div>
+        <div class="degrees" id="finishTemp"></div>
+        <div class="information">
+        
+        <div class="weather" id="weather"></div>
+        <div class="wind_speed" id="wind_speed"></div>
+        <div class="humidity" id="humidity"></div>
+        <div class="pressure" id="pressure"></div>
+        <div class="feels_like" id="feels_like"></div>
+        
+        </div>
+    </div>
+</div>
+       
+    
+    <script src="weather.js"></script>
+</body>
+</html>

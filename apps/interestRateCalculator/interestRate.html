@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="interestRate.css">
+    <title>Interest Rate Calculator</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+</head>
+<body>
+    <div class="calculator">
+        <h1>Interest Rate Calculator</h1>
+        <label for="principal">Principal Amount:</label>
+        <input type="number" id="principal" placeholder="Enter principal amount">
+        
+        <label for="rate">Annual Interest Rate (%):</label>
+        <input type="number" id="rate" placeholder="Enter annual interest rate">
+        
+        <label for="time">Time (in years):</label>
+        <input type="number" id="time" placeholder="Enter time in years">
+    
+        <div id="result" class="result"></div>
+        
+        <button id="calculateSimple">Simple Interest</button>
+        <button id="calculateCompound">Compound Interest</button>
+    </div>
+    
+    <script src="interestRate.js"></script>
+</body>
+</html>
