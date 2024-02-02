@@ -31,6 +31,7 @@
     
         label {
             font-weight: bold;
+            
         }
     
         input {
@@ -40,7 +41,7 @@
             background-color: #ffffff49;
             outline: none;
             border: none;
-
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             border-radius: 20px;
         }
     
@@ -55,6 +56,7 @@
             border-radius: 20px;
             cursor: pointer;
             transition: all 0.3s ease-in-out;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
         button:hover{
             background-color: #242424;
@@ -69,6 +71,7 @@
             border: none;
             outline: none;
             border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
     </style>
 </head>
@@ -103,28 +106,33 @@
 
 <script>
     async function convertCurrency() {
-        const amount = document.getElementById('amount').value;
-        const fromCurrency = document.getElementById('from').value;
-        const toCurrency = document.getElementById('to').value;
+    const amount = document.getElementById('amount').value;
+    const fromCurrency = document.getElementById('from').value;
+    const toCurrency = document.getElementById('to').value;
 
-        if (!amount) {
-            alert("Please enter an amount");
-            return;
-        }
-
-        const apiUrl = `https://api.exchangerate-api.com/v4/latest/${fromCurrency}`;
-        try {
-            const response = await fetch(apiUrl);
-            const data = await response.json();
-            const exchangeRate = data.rates[toCurrency];
-            const convertedAmount = (amount * exchangeRate).toFixed(2);
-
-            const resultElement = document.getElementById('result');
-            resultElement.textContent = `${amount} ${fromCurrency} is approximately ${convertedAmount} ${toCurrency}`;
-        } catch (error) {
-            console.error('Error fetching exchange rates:', error);
-        }
+    if (!amount) {
+        alert("Please enter an amount");
+        return;
     }
+
+    if (fromCurrency === toCurrency) {
+        alert("Please select different currencies for conversion");
+        return;
+    }
+
+    const apiUrl = `https://api.exchangerate-api.com/v4/latest/${fromCurrency}`;
+    try {
+        const response = await fetch(apiUrl);
+        const data = await response.json();
+        const exchangeRate = data.rates[toCurrency];
+        const convertedAmount = (amount * exchangeRate).toFixed(2);
+
+        const resultElement = document.getElementById('result');
+        resultElement.textContent = `${amount} ${fromCurrency} is approximately ${convertedAmount} ${toCurrency}`;
+    } catch (error) {
+        console.error('Error fetching exchange rates:', error);
+    }
+}
 </script>
 
 </body>
