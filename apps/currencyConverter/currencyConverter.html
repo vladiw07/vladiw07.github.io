@@ -2,154 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
     <title>Currency Converter</title>
     <style>
         body {
-        font-family: "Poppins", sans-serif;
-        background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-    background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        
-    }
-
-    #converter {
-        max-width: 400px;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-        background-color: #cfcfcf9d;
-        border-radius: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        
-    }
-
-        h1 {
+            font-family: 'Poppins', sans-serif;
+            background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        *{
+            margin-top: 10px;
+        }
+    
+        .converter-container {
+            display: flex;
+            flex-direction: column;
             text-align: center;
-            color: black;
-            font-weight:200;
+            padding: 20px;
+            background-color: #ffffff55;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        select, input[type="number"] {
-            width: 100%;
-            padding: 10px;
+    
+        label {
+            font-weight: bold;
+        }
+    
+        input {
             margin-bottom: 10px;
-            background-color: transparent;
-            border-radius: 20px;
-            border: none;
-            color: black;
+            padding: 8px;
+            font-size: 14px;
+            background-color: #ffffff49;
             outline: none;
-            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-            
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #54575a;
-            color: white;
             border: none;
-            cursor: pointer;
+
             border-radius: 20px;
+        }
+    
+        button {
+            margin-top: 10px; 
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #000000;
+            
+            color: #ffffff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
         }
         button:hover{
-            background-color:#333536;
+            background-color: #242424;
         }
-
         #result {
-            text-align: center;
+            margin-top: 20px;
             font-size: 18px;
-            margin-top: 10px;
-            color: black;
+            font-weight: bold;
         }
-        #amount{
-            width: 380px;
+        select{
+            background-color: #ffffff3b;
+            border: none;
+            outline: none;
+            border-radius: 20px;
         }
-        input[type=number]::-webkit-inner-spin-button, 
-        input[type=number]::-webkit-outer-spin-button { 
-        -webkit-appearance: none; 
-        margin: 0; 
-}
-@media only screen and (max-width: 500px) {
-    #converter{
-        transform: scale(0.8);
-}
-    
-}
-@media only screen and (max-width: 371px) {
-    #converter{
-        transform: scale(0.7);
-}
-    
-}
-    
     </style>
 </head>
 <body>
-    <div id="converter">
-        <h1>Currency Converter</h1>
-        <select id="fromCurrency">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-            <option value="BGN">BGN</option>
-        </select>
-        <input type="number" id="amount" placeholder="Enter amount">
-        <select id="toCurrency">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
-            <option value="BGN">BGN</option>
-        </select>
-        <button onclick="convertCurrency()">Convert</button>
-        <div id="result"></div>
-    </div>
 
-    <script>
-        function convertCurrency() {
-            const fromCurrency = document.getElementById("fromCurrency").value;
-            const toCurrency = document.getElementById("toCurrency").value;
-            const amount = parseFloat(document.getElementById("amount").value);
+<div class="converter-container">
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount" placeholder="Enter amount">
 
-            // You can fetch the exchange rates from an API or use a predefined object.
-            const exchangeRates = {
-                USD: {
-                    EUR: 0.91,
-                    GBP: 0.78,
-                    BGN: 1.78,
-                },
-                EUR: {
-                    USD: 1.1,
-                    GBP: 0.88,
-                    BGN: 1.96,
-                },
-                GBP: {
-                    USD: 1.36,
-                    EUR: 1.13,
-                    BGN: 2.27,
-                },
-                BGN: {
-                    USD: 0.56,
-                    EUR: 0.51,
-                    GBP: 0.44,
-                },
-            };
+    <label for="from">From Currency:</label>
+    <select id="from">
+      
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        
+    </select>
 
-            if (!exchangeRates[fromCurrency] || !exchangeRates[fromCurrency][toCurrency]) {
-                document.getElementById("result").textContent = "Invalid currency conversion.";
-                return;
-            }
+    <label for="to">To Currency:</label>
+    <select id="to">
+        
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
 
-            const result = (amount * exchangeRates[fromCurrency][toCurrency]).toFixed(1);
-            document.getElementById("result").textContent = `${amount} ${fromCurrency} = ${result} ${toCurrency}`;
+    </select>
+
+    <button onclick="convertCurrency()">Convert</button>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    async function convertCurrency() {
+        const amount = document.getElementById('amount').value;
+        const fromCurrency = document.getElementById('from').value;
+        const toCurrency = document.getElementById('to').value;
+
+        if (!amount) {
+            alert("Please enter an amount");
+            return;
         }
-    </script>
+
+        const apiUrl = `https://api.exchangerate-api.com/v4/latest/${fromCurrency}`;
+        try {
+            const response = await fetch(apiUrl);
+            const data = await response.json();
+            const exchangeRate = data.rates[toCurrency];
+            const convertedAmount = (amount * exchangeRate).toFixed(2);
+
+            const resultElement = document.getElementById('result');
+            resultElement.textContent = `${amount} ${fromCurrency} is approximately ${convertedAmount} ${toCurrency}`;
+        } catch (error) {
+            console.error('Error fetching exchange rates:', error);
+        }
+    }
+</script>
+
 </body>
 </html>
