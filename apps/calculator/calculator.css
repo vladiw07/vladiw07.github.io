@@ -77,13 +77,8 @@ button:hover {
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 350px) {
     .calculator{
-        transform: scale(0.7);
-    }
-}
-@media only screen and (max-width: 750px) {
-    .calculator{
-        transform: scale(0.4);
+        transform: scale(0.85);
     }
 }

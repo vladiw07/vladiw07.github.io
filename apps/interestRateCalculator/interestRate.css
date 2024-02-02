@@ -72,18 +72,14 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 550px) {
     .calculator{
-        transform: scale(0.7);
+        transform: scale(0.9);
     }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 490px) {
     .calculator{
-        transform: scale(0.4);
+        transform: scale(0.8);
     }
 }
-@media only screen and (max-width: 600px) {
-    .calculator{
-        transform: scale(0.3);
-    }
-}
+
