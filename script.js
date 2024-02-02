@@ -22,6 +22,7 @@ window.onclick = function(event) {
         }
     }
 }
+
 document.querySelector("#contactUs").addEventListener("click", function() {
     document.querySelector(".footer").scrollIntoView({ behavior: "smooth" });
 });
@@ -32,7 +33,9 @@ document.querySelector("#newsletterButton").addEventListener("click", function()
     document.querySelector(".newsletter-section").scrollIntoView({ behavior: "smooth" });
     console.log('da')
 });
-
+document.querySelector('.button').addEventListener('click', ()=>{
+    document.querySelector(".hero-section").scrollIntoView({ behavior: "smooth" });
+})
 document.querySelector(".homeButton").addEventListener("click", function() {
     document.querySelector(".section-1").scrollIntoView({ behavior: "smooth" });
 });
