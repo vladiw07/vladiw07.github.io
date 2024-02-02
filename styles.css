@@ -289,14 +289,14 @@ background: linear-gradient(135deg, #7BBC26, #E4ED87);
 
 
 .section-1 h2{
-  font-size: 50px;
+  font-size: 79px;
   padding-bottom: 50px;
   text-shadow: 0px 5px 5px rgba(81,67,21,0.8);
 }
 .section-1 p a{
   color: rgb(0, 0, 0);
   font-weight: bold;
-  font-size: 22px;
+  font-size: 25px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   
@@ -309,6 +309,7 @@ background: linear-gradient(135deg, #7BBC26, #E4ED87);
 
 .get-started-button .button {
   position: relative;
+  font-size: 39px;
   top: 100px;
   background-color: #007BFF;
   color: #fff;
@@ -317,6 +318,7 @@ background: linear-gradient(135deg, #7BBC26, #E4ED87);
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
+  
   text-decoration: none; 
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: all 0.3s ease-in-out;
@@ -355,13 +357,13 @@ footer {
   color: #0056b3;
 }
 #twitter:hover{
-  color: cyan;
+  color: rgb(0, 195, 255);
 }
 #instagram:hover{
-  color: purple;
+  color: rgb(230, 30, 230);
 }
 #linkedin:hover{
-  color: #0056b3;
+  color: #238bfb;
 }
 
 .footer-info {
@@ -438,20 +440,27 @@ footer {
 
 .footer-info a{
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
 }
 
 .hero-text-information{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
-  color: #ffffff;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+  color: #e3e3e3;
   padding-top: 100px;
-  font-size: 25px;
+  padding-left: 270px;
+  padding-right: 270px;
+  font-size: 18px;
   text-align: center;
+  font-weight: 100;
 }
-
+.hero-text-information strong{
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 100;
+}
 .hero-section-2{
   padding-top: 40px;
   height: fit-content;
@@ -588,6 +597,7 @@ transition: background-image 0.3s ease-in-out;
   .footer-info {
       font-size: 12px;
   }
+  
 }
 @media only screen and (max-width: 730px) {
   .menu-bar ul {
@@ -611,3 +621,9 @@ transition: background-image 0.3s ease-in-out;
     display: none;
   }
   }
+  @media only screen and (max-width: 740px) {
+    .hero-text-information{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    }

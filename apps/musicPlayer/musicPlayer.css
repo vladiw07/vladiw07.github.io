@@ -1,0 +1,283 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#everything {
+    position: absolute;
+    margin-right: 1743px;
+    margin-top: -500px;
+    top: 50%;
+}
+
+.topBorder {
+    position: relative;
+    background-color: black;
+    width: 300px;
+    height: 3px;
+    top: 45px;
+}
+
+#heading {
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: 120px;
+    left: 380px;
+}
+
+.wrapper1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    place-content: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.slider {
+    
+    position: absolute;
+    top: 670px;
+    left: 800px;
+    width: 200px;
+    transform: scale(0.8);
+}
+
+.slider input{
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 212px;
+    height: 20px;
+    -webkit-appearance: none;
+    background-color: transparent;
+    z-index: 99;
+}
+
+.slider input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 25px;
+    height: 25px;
+    background-color: #242323;
+    
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider progress {
+    width: 200px;
+    height: 20px;
+    -webkit-appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    overflow:hidden;
+
+}
+
+.slider progress::-webkit-progress-bar{
+
+
+
+    
+    background-color: #d2d8d6;
+    
+
+
+
+}
+.slider progress::-webkit-progress-value{
+    
+background-color: gray;
+}
+
+.sliderValue {
+    font-family: "Google Sans Regular";
+    width: 28px;
+    height: 20px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+#VolumeIcon{
+    font-size: 30px;
+    position: absolute;
+    top:665px;
+    left: 989px;
+    background-image: url(/volume-up.png);
+    background-repeat: no-repeat;
+}
+
+#iconImage{
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top:670px;
+    left: 989px;
+    
+}
+
+.progress-area{
+    height: 6px;
+    width: 270px;
+    background: #fff;
+    position: absolute;
+    top: 620px;
+    left:755px;
+    border-radius: 50px;
+    
+}
+#box{
+    background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(27, 26, 26));
+    box-shadow: 0px 0px 3px 3px rgb(255, 255, 255);
+}
+#box2 {
+    position: absolute;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(27, 26, 26));
+    width: 300px;
+    height: 300px;
+    left: 740px;
+    top: 300px;
+    align-items: start;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -ms-overflow-style: none; 
+    z-index: 99;
+}
+#box2::-webkit-scrollbar {
+    width: 12px; 
+}
+
+#box2::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Make the thumb transparent */
+}
+
+#box2::-webkit-scrollbar-track {
+    background-color: transparent; /* Make the track transparent */
+}
+#songButton{
+    background:transparent;
+    
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+    border-bottom: 1px solid;
+    
+    
+    
+   
+}
+
+#box2::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
+}
+
+
+.progress-area .progress-bar{
+    height: inherit;
+    width: 50%;
+    border-radius: inherit;
+    background: red;
+}
+
+
+
+.progress-bar::before{
+    content: " ";
+}
+
+#sliderTimer{
+    position: absolute;
+    top: 620px;
+    left: 792px;
+    width: 200px;
+    
+    
+    
+    cursor: pointer;
+}
+
+
+#timer{
+    position: absolute;
+    top: 615px;
+    left: 750px;
+}
+#maxDuration{
+    position: absolute;
+    top: 615px;
+    left: 1000px;
+}
+
+#songName{
+    font-size: 20px;
+    margin-top: 20px;
+    
+    
+
+}
+
+#songAuthor{
+    font-size: 15px;
+    padding-bottom: 400px;
+}
+
+#labels{
+    position: relative;
+    top: 40px;
+}
+
+#titleTop{
+    position: relative;
+    top: 20px;
+    font-weight: bold;
+}
+
+
+
+.custom-box {
+    width: 300px;
+    height: 520px;
+    top: 200px;
+    left: 740px;
+    border-radius: 20px;
+}
+
+.play-button {
+    bottom: 28px;
+    left: 25px;
+    transform: scale(2.8);
+}
+
+.pause-button {
+    bottom: 28px;
+    left: 25px;
+    transform: scale(2.8);
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+

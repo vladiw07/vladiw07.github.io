@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="musicPlayer.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-button-o.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-pause-o.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/music.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js"></script>
+    <script src="musicPlayer.js" defer></script>
+</head>
+<body onload="d()">
+    
+    <div id="everything">
+        <div id="box2"></div>
+
+        <div id='wrapper1' class="wrapper1">
+            <div class="MusicPlayer">
+                <div id="box" style="position: absolute;" class="MusicPlayer custom-box">
+                    <label id="titleTop">Now Playing</label>
+                    <div id="labels">
+                        <label id="songDetails"></label><br>
+                    </div>
+                    <div class="topBorder"></div>
+                    <button onclick="play()" id="playButton" class="play-button" style="position: absolute;"><i class="fa fa-play"></i></button>
+                    <button onclick="pause()" id="pauseButton" class="pause-button" style="visibility: hidden; position: absolute;"><i class="fa fa-pause"></i></button>
+                </div>
+            </div>  
+    
+            <audio id="audio" preload="metadata">
+                <source id="musicSource"  type="audio/ogg">
+            </audio>
+            
+            <div class="slider-cont">
+                <div class="slider">
+                    <input id="volumeRange" type="range" min="0" max="100" value="50" onchange="VolumeIconF()">
+                    <progress min="0" max="100" value="50"></progress>
+                </div>
+                <div class="sliderValue pl-1 pb-7"><i class="fa fa-volume-up" id="VolumeIcon" aria-hidden="true"></i></div>
+                <image id="iconImage" style="visibility: hidden;" src="/volume-up.ico"></image>
+            </div>
+            
+            <div class="timer">
+                <div id="timer">0:00</div>
+                <input id="sliderTimer" type="range" min="0" max="100" value="0" onchange="slideFunction()">
+                <div id="maxDuration">0:00</div>
+            </div>    
+        </div>
+    </div>
+    
+</body>
+</html>
