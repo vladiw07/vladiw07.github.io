@@ -262,6 +262,7 @@ background-color: gray;
 }
 
 .play-button {
+    background-color:transparent;
     bottom: 28px;
     left: 25px;
     transform: scale(2.8);

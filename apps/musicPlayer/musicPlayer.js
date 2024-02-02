@@ -2,40 +2,36 @@ let allMusic = [
     {
         name: "Next To Me",
         artist: "mqx",
-        src: "/music/Next To Me.mp3"
+        src: "music/Next To Me.mp3"
       },
       {
         name: "OneShot",
         artist: "msht",
-        src: "/music/oneShot.wav"
+        src: "music/oneShot.wav"
       },
     
     {
      name: 'Phonk Bass Boost',
      artist: 'AlexiAction',
-     src: "/music/pbb.mp3"
+     src: "music/pbb.mp3"
       },
     {
     name: 'Blast',
     artist: 'AlexiAction',
-    src: "/music/blast.mp3"
+    src: "music/blast.mp3"
     },
     
     {
     name: 'Rocket',
     artist: 'Monument_Music',
-    src: "/music/rocket.mp3"
+    src: "music/rocket.mp3"
     }, 
     {
     name: 'Background Trap',
     artist: 'AlexiAction',
-    src: "/music/BackgroundTrap.mp3"
+    src: "music/BackgroundTrap.mp3"
     },
-    {
-    name: 'Mischief',
-    artist: 'AlexiAction',
-    src: "/music/mischief.mp3"
-    },           
+               
     
   ];
 let audio = document.getElementById('audio');

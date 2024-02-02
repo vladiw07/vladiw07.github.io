@@ -11,9 +11,9 @@
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/play-pause-o.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/music.css' rel='stylesheet'>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js"></script>
-    <script src="musicPlayer.js" defer></script>
+    
 </head>
-<body onload="d()">
+<body>
     
     <div id="everything">
         <div id="box2"></div>
@@ -40,7 +40,7 @@
                     <input id="volumeRange" type="range" min="0" max="100" value="50" onchange="VolumeIconF()">
                     <progress min="0" max="100" value="50"></progress>
                 </div>
-                <div class="sliderValue pl-1 pb-7"><i class="fa fa-volume-up" id="VolumeIcon" aria-hidden="true"></i></div>
+                <div style="padding-left: 4px; padding-bottom: 28px;" class="sliderValue"><i class="fa fa-volume-up" id="VolumeIcon" aria-hidden="true"></i></div>
                 <image id="iconImage" style="visibility: hidden;" src="/volume-up.ico"></image>
             </div>
             
@@ -51,6 +51,6 @@
             </div>    
         </div>
     </div>
-    
+    <script src="musicPlayer.js"></script>
 </body>
 </html>
