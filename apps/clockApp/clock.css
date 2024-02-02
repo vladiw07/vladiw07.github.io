@@ -1,7 +1,11 @@
-html,body {
+html, body {
     height: 100%;
 }
-body{
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     background: #0f3854;
     background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
@@ -13,15 +17,16 @@ body{
     -ms-user-select: none;
 }
 
-.result{
+.result {
     text-align: center;
     font-size: 2vw;
-    margin-top: 14%;
+    
     color: #fff;
-    letter-spacing: 1v1;
+    letter-spacing: 1vw;
     text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
 }
-.result2{
+
+.result2 {
     text-align: center;
     font-size: 8vw;
     margin-top: 0%;
@@ -29,4 +34,3 @@ body{
     letter-spacing: 2vw;
     text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
 }
-
