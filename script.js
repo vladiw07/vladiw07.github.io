@@ -33,7 +33,7 @@ document.querySelector("#contactUs").addEventListener("click", function() {
     document.querySelector(".footer").scrollIntoView({ behavior: "smooth" });
 });
 document.querySelector("#aboutUsButton").addEventListener("click", function() {
-    document.querySelector(".footer").scrollIntoView({ behavior: "smooth" });
+    document.querySelector(".faq").scrollIntoView({ behavior: "smooth" });
 });
 document.querySelector("#newsletterButton").addEventListener("click", function() {
     document.querySelector(".newsletter-section").scrollIntoView({ behavior: "smooth" });

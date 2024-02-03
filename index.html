@@ -46,7 +46,7 @@
           </li>
           
           </li>
-          <li><a style="cursor: pointer;" id="aboutUsButton">About Us</a></li>
+          <li><a style="cursor: pointer;" id="aboutUsButton">FAQ</a></li>
         </ul>
       </div>
     </section>
@@ -160,7 +160,7 @@
             Temperature Converter
             <i style="padding-right: 20px;" class="fas fa-arrow-right"></i>
           </div>
-          <img id="tempIcon" src="images/temperature.png" alt="">
+          <img id="tempIcon" style="position: relative; bottom: 15px;" src="images/temperature.png" alt="">
         </li>
       </a>
         <a style="color: black; text-decoration: none;" href="apps/currencyConverter/currencyConverter.html">
@@ -169,7 +169,7 @@
             Currency Converter
             <i class="fas fa-arrow-right arrow-3"></i>
           </div>
-          <img id="currencyIcon" src="images/currency.png" alt="">
+          <img id="currencyIcon" style="position: relative; bottom: 13px;" src="images/currency.png" alt="">
         </li>
       </a>
       <a style="color: black; text-decoration: none;" href="apps/weightConverter/weight.html">
@@ -244,7 +244,7 @@
           </form>
       </div>
   </section>
-  <header>
+  <header class="faq">
     <h1>Easy<span style="color: rgb(0, 123, 255);">Tools</span> FAQ</h1>
   </header>
 
@@ -252,15 +252,15 @@
     
 
     <div class="faq-item">
-      <h2 class="question">How do I use the Calculator tool?</h2>
+      <h2 class="question">How do I use the Weather App?</h2>
       <button class="reveal-button" onclick="toggleAnswer(this)">→</button>
-      <p class="answer hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero a tortor tincidunt, vitae eleifend mi facilisis.</p>
+      <p class="answer hidden">Enter location, view current weather and forecast. Stay informed effortlessly!</p>
     </div>
     
     <div class="faq-item">
-      <h2 class="question">Can I save my calculations on the website?</h2>
+      <h2 class="question">Can I save my notes on the website?</h2>
       <button class="reveal-button" onclick="toggleAnswer(this)">→</button>
-      <p class="answer hidden">Yes, you can create an account and save your calculations for future reference.</p>
+      <p class="answer hidden">Yes, use local storage for convenient note-saving. Note that saved data is device and browser-specific. Check settings for details.</p>
     </div>
 
     <div class="faq-item">
@@ -275,11 +275,7 @@
       <p class="answer hidden">Our currency exchange rates are updated in real-time, ensuring accuracy for your conversions.</p>
     </div>
     
-    <div class="faq-item">
-      <h2 class="question">Can I suggest a new tool or feature?</h2>
-      <button class="reveal-button" onclick="toggleAnswer(this)">→</button>
-      <p class="answer hidden">Certainly! We value user feedback. Feel free to contact us with your suggestions, and we'll consider adding new features.</p>
-    </div>
+   
     
     <div class="faq-item">
       <h2 class="question">Are the apps available for both Android and iOS?</h2>
