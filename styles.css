@@ -596,6 +596,8 @@ header {
 .answer {
   margin-top: 10px;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 
@@ -615,7 +617,6 @@ header {
 
 .hidden {
   display: none;
-  
 }
 @media (max-width: 768px) {
   .newsletter-container {
