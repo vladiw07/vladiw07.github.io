@@ -10,6 +10,12 @@ function toggleDropdown() {
     dropdown.classList.toggle("show");
 }
 
+function toggleAnswer(button) {
+    const answer = button.nextElementSibling;
+    answer.classList.toggle('hidden');
+    button.innerText = answer.classList.contains('hidden') ? '→' : '↓';
+}
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
