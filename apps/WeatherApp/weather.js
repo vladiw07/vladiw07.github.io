@@ -21,7 +21,7 @@ function submit(){
     return response.json();
   })
   .then((data) => {
-    // Process the weather data
+
     let temperature = data.main.temp;
     temperature -= 273.15;
     temperature = Math.floor(temperature);

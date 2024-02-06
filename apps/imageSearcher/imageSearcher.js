@@ -11,7 +11,7 @@ let page = 1;
 async function searchImages() {
     keyword = searchBox.value;
 
-    // Check if the search box is empty before making the API call
+
     if (!keyword) {
         return;
     }

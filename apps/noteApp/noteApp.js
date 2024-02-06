@@ -1,14 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
 const addBox = document.querySelector(".add-box"),
 popupBox = document.querySelector(".popup-box"),
 popupTitle = popupBox.querySelector("header p"),

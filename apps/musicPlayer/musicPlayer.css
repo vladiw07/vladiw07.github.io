@@ -166,11 +166,11 @@ background-color: gray;
 }
 
 #box2::-webkit-scrollbar-thumb {
-    background-color: transparent; /* Make the thumb transparent */
+    background-color: transparent; 
 }
 
 #box2::-webkit-scrollbar-track {
-    background-color: transparent; /* Make the track transparent */
+    background-color: transparent;
 }
 #songButton{
     background:transparent;

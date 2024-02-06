@@ -12,11 +12,25 @@ function toggleDropdown() {
 
 function toggleAnswer(button) {
     const answer = button.nextElementSibling;
+    const allAnswers = document.querySelectorAll('.faq-item .answer');
+    const allButtons = document.querySelectorAll('.faq-item .reveal-button');
+
+
+    allAnswers.forEach((ans) => {
+        if (ans !== answer) {
+            ans.classList.add('hidden');
+        }
+    });
+    allButtons.forEach((btn) => {
+        if (btn !== button) {
+            btn.innerText = '→';
+        }
+    });
+
     answer.classList.toggle('hidden');
     button.innerText = answer.classList.contains('hidden') ? '→' : '↓';
 }
 
-// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
