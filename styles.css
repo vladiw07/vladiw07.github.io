@@ -130,14 +130,19 @@ ul{
 }
 .dropdown-menu {
   display: none;
-}
-.menu-bar ul li:hover .dropdown-menu {
-  display: block;
   position: absolute;
+  opacity: 0;
   left: 0;
   top: 100%;
   background-color: var(--color-black);
   z-index: 1;
+  transition: all 1s ease-in-out;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  text-align: center;
 }
 
 .menu-bar ul li:hover .dropdown-menu ul {
@@ -150,17 +155,7 @@ ul{
   padding: 10px;
 }
 
-.dropdown-menu-1 {
-  display: none;
-}
 
-.dropdown-menu ul li:hover .dropdown-menu-1 {
-  display: block;
-  position: absolute;
-  left: 150px;
-  top: 0;
-  background-color: var(--color-black);
-}
 .hero-section {
   height: fit-content;
   min-height: 500px;

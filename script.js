@@ -1,6 +1,16 @@
 
 const form = document.querySelector('.newsletter-form');
-
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
     document.getElementById('newsletterinput').value = '';
@@ -31,17 +41,7 @@ function toggleAnswer(button) {
     button.innerText = answer.classList.contains('hidden') ? '→' : '↓';
 }
 
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (var i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
+
 
 document.querySelector("#contactUs").addEventListener("click", function() {
     document.querySelector(".footer").scrollIntoView({ behavior: "smooth" });
