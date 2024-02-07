@@ -8,13 +8,16 @@ body{
     background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #fff;
+    color: #000000;
+    font-family: "Poppins",sans-serif;
 }
 h1{
     text-align: center;
     margin: 100px auto 50px;
-    font-weight: 600;
+    font-weight: 100;
     font-size: 50px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
     text-shadow: #111010;
 }
 form{

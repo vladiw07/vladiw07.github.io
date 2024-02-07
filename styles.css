@@ -4,9 +4,9 @@
   background-image: linear-gradient(
     -225deg,
     #ffffff 0%,
-    #ff0000 29%,
-    hsl(0, 0%, 13%) 67%,
-    #040404 100%
+    #b89eff 29%,
+    hsl(0, 0%, 76%) 67%,
+    #ff00008f 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -118,7 +118,9 @@ ul{
 }
 .section-1 p{
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  
+  font-style: italic;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
   
 }
 .fas {
@@ -194,10 +196,6 @@ background: linear-gradient(135deg, #757575, #050505);
   height: 150px;
   
 
-/*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=c14353&c2=c74e2e&gt=l&gd=dtl
-*/
 background: #C14353;
 background: linear-gradient(135deg, #C14353, #C74E2E);
   border-radius: 10px;
@@ -268,15 +266,10 @@ background: linear-gradient(135deg, #C14353, #C74E2E);
   font-family: "Poppins",sans-serif;
   font-size: 20px;
   font-weight: 100;
-  padding-bottom: 160px;
+  padding-bottom: 130px;
   padding-left: 15px;
   padding-right: 15px;
- 
 
-/*
-* Created with https://www.css-gradient.com
-* Gradient link: https://www.css-gradient.com/?c1=7bbc26&c2=e4ed87&gt=l&gd=dtl
-*/
 background: #7BBC26;
 background: linear-gradient(135deg, #7BBC26, #E4ED87);
 
