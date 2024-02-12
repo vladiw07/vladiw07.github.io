@@ -1,31 +1,5 @@
 let allMusic = [
-    {
-        name: "Next To Me",
-        artist: "mqx",
-        src: "music/Next To Me.mp3"
-      },
-      {
-        name: "OneShot",
-        artist: "msht",
-        src: "music/oneShot.wav"
-      },
     
-    {
-     name: 'Phonk Bass Boost',
-     artist: 'AlexiAction',
-     src: "music/pbb.mp3"
-      },
-    {
-    name: 'Blast',
-    artist: 'AlexiAction',
-    src: "music/blast.mp3"
-    },
-    
-    {
-    name: 'Rocket',
-    artist: 'Monument_Music',
-    src: "music/rocket.mp3"
-    }, 
     {
     name: 'Background Trap',
     artist: 'AlexiAction',
@@ -94,12 +68,14 @@ audio.onloadedmetadata = function() {
 const play = () =>{
     playButton.style.visibility = 'hidden';
     pauseButton.style.visibility = 'visible';
+    pauseButton.style.backgroundColor = 'transparent';
     audio.play();
 }
 
 const pause = () =>{
     playButton.style.visibility = 'visible';
     pauseButton.style.visibility = 'hidden';
+    pauseButton.style.backgroundColor = 'transparent';
     audio.pause();
 }
 
