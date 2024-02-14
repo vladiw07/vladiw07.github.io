@@ -50,10 +50,11 @@ button {
     font-size: 20px;
     font-family: "Poppins",sans-serif;
     background-color: black;
+    transition: all 0.3s ease-in-out;
     
 }
 button:hover{
-    background-color: rgba(0, 0, 0, 0.753);
+    background-color: rgba(0, 0, 0, 0.847);
 }
 
 .result {

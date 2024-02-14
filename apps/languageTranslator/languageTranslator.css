@@ -26,15 +26,15 @@ body{
 }
 .wrapper{
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #00000082;
 }
 .wrapper .text-input{
   display: flex;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #0000003e;
 }
 .text-input .to-text{
   border-radius: 0px;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #00000061;
 }
 .text-input textarea{
   height: 250px;
@@ -54,6 +54,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 .controls{
   list-style: none;
@@ -113,7 +114,12 @@ body{
   color: #adadad;
   cursor: pointer;
   font-size: 16px;
-  transition: transform 0.2s ease;
+  transition: all 0.2s ease;
+  color: rgba(0, 0, 0, 0.797);
+
+}
+.controls .exchange:hover{
+  color: rgba(0, 0, 0, 0.506);
 }
 .controls i:active{
   transform: scale(0.9);
@@ -127,8 +133,12 @@ body{
   cursor: pointer;
   margin-top: 20px;
   font-size: 17px;
-  border-radius: 5px;
-  background: #5372F0;
+  border-radius: 13px;
+  background: #2f52e1;
+  transition: all 0.3s ease-in-out;
+}
+.container button:hover{
+  background: #0d3eff;
 }
 
 @media (max-width: 660px){

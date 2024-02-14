@@ -90,19 +90,19 @@ select {
 
 button {
     padding: 10px 20px;
-    background-color: #413c3c;
+    background-color: #000000;
     color: #ffffff;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease;
     margin: 5px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
 }
 
 button:hover {
-    background-color: #797979;
+    background-color: #000000d0;
 }
 
 .result {

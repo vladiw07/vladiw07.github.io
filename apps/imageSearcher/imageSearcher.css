@@ -51,8 +51,12 @@ form button{
     outline: 0;
     border-radius: 20px;
     cursor: pointer;
-
+transition: all 0.3s ease-in-out;
 }
+form button:hover{
+    background: #111010dc;
+}
+
 ::placeholder{
     color: #fff;
     font-size: 18px;

@@ -191,6 +191,7 @@ background-color: gray;
 }
 #songButton:hover{
     background-image: linear-gradient(to left, rgb(167, 151, 151), rgb(197, 197, 197));
+    border-bottom: none;
 }
 
 #box2::-webkit-scrollbar { 
@@ -284,8 +285,12 @@ background-color: gray;
 }
 
 
-@media only screen and (max-width: 356px) {
-    
+@media only screen and (max-height: 542px) {
+    #everything{
+        transform: scale(0.7);
+        margin-left: 530px;
+        margin-top: -380px;
+    }
 }
 
 
