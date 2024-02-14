@@ -3,10 +3,10 @@
    text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
-    #ffffff 0%,
-    #b89eff 29%,
-    hsl(0, 0%, 76%) 67%,
-    #ff00008f 100%
+    #000000 0%,
+    #2f2f2f 29%,
+    hsl(0, 0%, 43%) 67%,
+    #e500008f 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -55,7 +55,7 @@ body {
   width: 100%;
   text-decoration: none;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  
+  background-color: aliceblue;
 }
 ul{
   list-style: none;
@@ -166,6 +166,7 @@ ul{
   padding-bottom: 20px;
 background: #757575;
 background: linear-gradient(135deg, #757575, #050505);
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; 
@@ -193,7 +194,10 @@ background: linear-gradient(135deg, #757575, #050505);
   width: 260px;
   height: 150px;
 
-background-image: linear-gradient(135deg, #C14353, #C74E2E);
+  
+  
+  background-image: linear-gradient(135deg, rgb(255, 255, 255), rgb(105, 105, 105));
+  
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   color: #000000;
@@ -214,7 +218,7 @@ background-image: linear-gradient(135deg, #C14353, #C74E2E);
 }
 .hero-cards-ul li:hover{
   background-image: none;
-  background: linear-gradient(135deg, #9a3644, #903a21);
+  background-image: linear-gradient(135deg, rgb(187, 187, 187), rgb(49, 49, 49));
 }
 .hero-cards-ul li i{
   position: relative;
@@ -263,8 +267,8 @@ background-image: linear-gradient(135deg, #C14353, #C74E2E);
   padding-left: 15px;
   padding-right: 15px;
 
-background: #7BBC26;
-background: linear-gradient(135deg, #7BBC26, #E4ED87);
+background: aliceblue;
+/* background: linear-gradient(135deg, #7BBC26, #E4ED87); */
 
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -359,7 +363,7 @@ footer {
 
 
 .newsletter-section {
-  background-color: #ffffff;
+  background-color: aliceblue;
   padding: 40px 0;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -455,12 +459,12 @@ footer {
   width: 100%;
   padding-bottom: 80px;
 
-background: #C679F7;
-background: linear-gradient(135deg, #C679F7, #7E4EB7);
+  background: #757575;
+  background: linear-gradient(135deg, #757575, #050505);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; 
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
 }
 
 
@@ -475,14 +479,13 @@ background: linear-gradient(135deg, #C679F7, #7E4EB7);
   flex-wrap: wrap;
 }
 .hero-cards-ul-2 li {
-  background-color: #2BBC4F;
-  background-image: linear-gradient(135deg, #2BBC4F, #127F08);
+  
+  background-image: linear-gradient(135deg, rgb(255, 255, 255), rgb(105, 105, 105));
   transition: all 0.3s ease-in-out;
 }
 
 .hero-cards-ul-2 li:hover {
-  background-color: #1e8337;
-  background-image: linear-gradient(135deg, #1e8337, #0d5706);
+  background-image: linear-gradient(135deg, rgb(187, 187, 187), rgb(49, 49, 49));
 }
 
 #tempIcon{
@@ -520,22 +523,19 @@ background: linear-gradient(135deg, #C679F7, #7E4EB7);
   width: 100%;
   padding-bottom: 80px;
 
-background: #058ED8;
-background: linear-gradient(135deg, #058ED8, #604CB2);
+  background: #757575;
+  background: linear-gradient(135deg, #757575, #050505);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; 
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
 }
 .hero-cards-ul-3 li{
-
-
-
-background-image: linear-gradient(135deg, #B58D22, #E57303);
-transition: background-image 0.3s ease-in-out;
+  background-image: linear-gradient(135deg, rgb(255, 255, 255), rgb(105, 105, 105));
+  transition: all 0.3s ease-in-out;
 }
 .hero-cards-ul-3 li:hover{
-  background-image: linear-gradient(135deg, #8c6e1b, #be6002);
+  background-image: linear-gradient(135deg, rgb(187, 187, 187), rgb(49, 49, 49));
   }
 #calculatorIcon{
   transform: scale(0.8);
@@ -559,11 +559,14 @@ header {
   color: #fff;
   text-align: center;
   padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .faq-container {
   max-width: 800px;
   margin: 20px auto;
+  background-color: aliceblue;
+  
 }
 
 .faq-item {
@@ -572,6 +575,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-items: center;
+}
+.last-faq-item{
+  border-bottom: none;
 }
 
 .question {
@@ -588,7 +594,7 @@ header {
 
 
 .reveal-button {
-  background-color: #fff;
+  background-color: aliceblue;
   color: #000000;
   padding: 8px 12px;
   border: none;
