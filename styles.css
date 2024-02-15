@@ -65,6 +65,20 @@ ul{
   top: 0;
   z-index: 1;
 }
+#languageSelect{
+  position: absolute;
+  top: 14.5px;
+  right: -40px;
+  font-size: 15px;
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+}
+#languageSelect option{
+  color: black;
+}
 
 .logo {
   color: var(--color-white);
@@ -608,6 +622,8 @@ header {
   
 }
 
+
+
 .hidden {
   display: none;
 }
@@ -647,27 +663,49 @@ header {
   }
   
 }
+
+
 @media only screen and (max-width: 730px) {
-  .menu-bar ul {
+  .menu-bar ul li {
     display: none;
   }
+  #languageLi{
+    display: block;
+  }
+  #languageSelect{
+    display: block;
+    z-index: 99;
+    position: relative;
+    top: 0px;
+  }
+
   .h1-wrapper{
     display: flex;
     justify-content: center;
     margin: 0 auto;
     }
   }
-
+  
 
   @media only screen and (max-width: 730px) {
     .hero-cards-ul{
       padding-top: 50px;
     }
     }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1091px) {
   .removedElements{
     display: none;
   }
+  
+
+  }
+
+  @media only screen and (max-width: 771px) {
+    #languageSelect{
+      font-size: 13px;
+      right: 0px;
+      bottom: 20px;
+    }
   }
   @media only screen and (max-width: 740px) {
     .hero-text-information{

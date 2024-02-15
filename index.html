@@ -12,14 +12,16 @@
   <body>
     
     <div class="app-container">
+      
       <section class="navbar">
+        
       <div class="menu-bar">
         <div class="h1-wrapper">
         <h1 class="logo">Easy<span>Tools</span></h1>
         </div>
         <ul>
           <li ><a class="homeButton">Home</a></li>
-          <li class="removedElements" style="cursor: pointer;"><a>Converters <i class="fas fa-caret-down"></i></a>
+          <li class="removedElements" style="cursor: pointer;"><a>Converters<i class="fas fa-caret-down"></i></a>
             <div class="dropdown-menu">
               <ul>
                 <li><a href="apps/currencyConverter/currencyConverter.html">Currency Converter</a></li>
@@ -47,35 +49,42 @@
           
           </li>
           <li><a style="cursor: pointer;" id="aboutUsButton">FAQ</a></li>
+          <li id="languageLi">
+            <select id="languageSelect">
+              <option value="en" selected>English</option>
+              <option value="bg">Bulgarian</option>
+            </select>
+          </li>
         </ul>
       </div>
+      
     </section>
     <section class="section-1">
       
       <div id="setting-logo"></div>
       <h2 class="animate-character" id="h2">Welcome to EasyTools</h2>
-      <p>At EasyTools, we provide a collection of handy calculators and converters to simplify your daily tasks. <br> Whether you need to calculate interest rates, percentages, or convert units, we've got you covered.</p><br>
-      <p>Our user-friendly tools are designed to make your life easier. Explore our categories:</p> <br>
+      <p id="firstText1">At EasyTools, we provide a collection of handy calculators and converters to simplify your daily tasks. </p><br> <p id="firstText2">Whether you need to calculate interest rates, percentages, or convert units, we've got you covered.</p><br>
+      <p id="firstText3">Our user-friendly tools are designed to make your life easier. Explore our categories:</p> <br>
       <ul id="ul1">
-          <li><strong>Calculators:</strong> Quick and accurate calculations for various scenarios.</li>
-          <li><strong>Converters:</strong> Effortlessly convert between different units and currencies.</li>
+          <li id="calculatorsDescription">Calculators: Quick and accurate calculations for various scenarios.</li>
+          <li id="convertersDescription">Converters: Effortlessly convert between different units and currencies.</li>
       </ul>
-      <p>Ready to get started? Try our <a href="apps/calculator/calculator.html">Calculator</a> or <a href="apps/currencyConverter/currencyConverter.html">Currency Converter</a> tools now!</p>
-      <p>If you have any questions or feedback, feel free to <a style="cursor: pointer;" id="contactUs">contact us</a>. We're here to assist you.</p>
+      <p id="firstText4">Ready to get started? Try our Calculator or Currency Converter tools now!'</p>
+      <p id="firstText5">If you have any questions or feedback, feel free to <a style="cursor: pointer;" id="contactUs">contact us</a>. We're here to assist you.</p>
 
       <div class="get-started-button">
-        <a class="button">Get Started</a>
+        <a id="getStartedButton" class="button">Get Started</a>
     </div>
     </section>
     <section class="hero-section">
       <div class="hero-text-information">
-        <h3 style="color: white; font-size: 40px;">Explore Our Handy Apps</h3>
-        <p><strong>Note App: </strong> Take notes, create to-do lists, and stay organized with our Note App.</p>
-    <p><strong>Weather App:  </strong> Stay up-to-date with the latest weather conditions and forecasts in your area.</p>
-    <p><strong>Language Translator:  </strong> Translate text between different languages effortlessly with our Language Translator.</p>
-    <p><strong>Clock App: </strong>Stay punctual with our Clock App. Easily check the time with our simple and intuitive interface.</p>
-    <p><strong>Image Searcher:  </strong>Explore visuals effortlessly with our Image Searcher. Find diverse images based on your queries.</p>
-    <p><strong>Music Player:  </strong>Dive into your favorite tunes with our Music Player. Enjoy a user-friendly interface and create playlists for a delightful audio experience.</p>
+        <h3 id="exploreOurApps" style="color: white; font-size: 40px;">Explore Our Handy Apps</h3>
+        <p id="noteApp"><strong id="noteAppHeader">Note App: </strong><a id="1appDescrition1">Take notes, create to-do lists, and stay organized with our Note App.</a></p>
+    <p id="weatherApp"><strong>Weather App:  </strong><a id="1appDescrition2"> Stay up-to-date with the latest weather conditions and forecasts in your area.</a></p>
+    <p id="languageApp"><strong>Language Translator:  </strong><a id="1appDescrition3"> Translate text between different languages effortlessly with our Language Translator.</a></p>
+    <p id="clockApp"><strong>Clock App: </strong><a id="1appDescrition4">Stay punctual with our Clock App. Easily check the time with our simple and intuitive interface.</a></p>
+    <p id="imageApp"><strong>Image Searcher:  </strong><a id="1appDescrition5">Explore visuals effortlessly with our Image Searcher. Find diverse images based on your queries.</a></p>
+    <p id="musicApp"><strong>Music Player:  </strong><a id="1appDescrition6">Dive into your favorite tunes with our Music Player. Enjoy a user-friendly interface and create playlists for a delightful audio experience.</a></p>
       </div>
 
 
@@ -145,10 +154,10 @@
     </section>
     <section class="hero-section-2">
       <div class="hero-text-information-2">
-        <h4>Converters</h4>
-        <p><strong>Temperature Converter:</strong> Convert temperatures between Celsius, Fahrenheit, and Kelvin with ease.</p>
-    <p><strong>Currency Converter:</strong> Instantly convert currencies for travel or business needs.</p>
-    <p><strong>Weight Converter:</strong> Quickly switch between pounds, kilograms, and ounces.</p>
+        <h4 id="convertersHeader">Converters</h4>
+        <p id="converter1"><strong>Temperature Converter:</strong> Convert temperatures between Celsius, Fahrenheit, and Kelvin with ease.</p>
+    <p id="converter2"><strong>Currency Converter:</strong> Instantly convert currencies for travel or business needs.</p>
+    <p id="converter3"><strong>Weight Converter:</strong> Quickly switch between pounds, kilograms, and ounces.</p>
       </div>
 
 
@@ -187,11 +196,11 @@
 
     <section class="hero-section-3">
       <div class="hero-text-information-2">
-        <h4>Calculators</h4>
+        <h4 id="calculatorsHeader">Calculators</h4>
         
-    <p><strong>Calculator:</strong> Quickly add, subtract, multiply, and divide numbers with precision.</p>
-    <p><strong>Percentage Calculator:</strong> Easily determine percentages, discounts, and markups for your financial needs.</p>
-    <p><strong>Interest Rate Calculator:</strong> Calculate interest rates, payments, and savings with accuracy for financial planning.</p>
+    <p id="calculator1"><strong>Calculator:</strong> Quickly add, subtract, multiply, and divide numbers with precision.</p>
+    <p id="calculator2"><strong>Percentage Calculator:</strong> Easily determine percentages, discounts, and markups for your financial needs.</p>
+    <p id="calculator3"><strong>Interest Rate Calculator:</strong> Calculate interest rates, payments, and savings with accuracy for financial planning.</p>
 
 
       
@@ -236,11 +245,11 @@
 
     <section class="newsletter-section">
       <div class="newsletter-container">
-          <h2>Subscribe to Our Newsletter</h2>
-          <p>Stay updated with the latest news and updates from our website.</p>
+          <h2 id="newsLetter1">Subscribe to Our Newsletter</h2>
+          <p id="newsLetter2">Stay updated with the latest news and updates from our website.</p>
           <form class="newsletter-form" action="#" method="post">
-              <input id="newsletterinput" type="email" name="email" placeholder="Your Email" required>
-              <button type="submit">Subscribe</button>
+              <input id="newsLetter3" id="newsletterinput" type="email" name="email" placeholder="Your Email" required>
+              <button id="newsLetter4" type="submit">Subscribe</button>
           </form>
       </div>
   </section>
@@ -252,35 +261,35 @@
     
 
     <div class="faq-item">
-      <h2 class="question">How do I use the Weather App?</h2>
+      <h2 id="question1" class="question">How do I use the Weather App?</h2>
       <button class="reveal-button" onclick="toggleAnswer(this)">→</button>
-      <p class="answer hidden">Enter location, view current weather and forecast. Stay informed effortlessly!</p>
+      <p id="answer1" class="answer hidden">Enter location, view current weather and forecast. Stay informed effortlessly!</p>
     </div>
     
     <div class="faq-item">
-      <h2 class="question">Can I save my notes on the website?</h2>
+      <h2 id="question2" class="question">Can I save my notes on the website?</h2>
       <button class="reveal-button" onclick="toggleAnswer(this)">→</button>
-      <p class="answer hidden">Yes, use local storage for convenient note-saving. Note that saved data is device and browser-specific. Check settings for details.</p>
+      <p id="answer2" class="answer hidden">Yes, use local storage for convenient note-saving. Note that saved data is device and browser-specific. Check settings for details.</p>
     </div>
 
     <div class="faq-item">
-      <h2 class="question">Is my personal information secure on EasyTools?</h2>
+      <h2 id="question3" class="question">Is my personal information secure on EasyTools?</h2>
       <button class="reveal-button" onclick="toggleAnswer(this)">→</button>
-      <p class="answer hidden">Absolutely! We take user privacy seriously. All personal information is encrypted and securely stored.</p>
+      <p id="answer3" class="answer hidden">Absolutely! We take user privacy seriously. All personal information is encrypted and securely stored.</p>
     </div>
     
     <div class="faq-item">
-      <h2 class="question">How often are the currency exchange rates updated in the Currency Converter?</h2>
+      <h2 id="question4" class="question">How often are the currency exchange rates updated in the Currency Converter?</h2>
       <button class="reveal-button" onclick="toggleAnswer(this)">→</button>
-      <p class="answer hidden">Our currency exchange rates are updated in real-time, ensuring accuracy for your conversions.</p>
+      <p id="answer4" class="answer hidden">Our currency exchange rates are updated in real-time, ensuring accuracy for your conversions.</p>
     </div>
     
    
     
     <div class="faq-item last-faq-item">
-      <h2 class="question">Are the apps available for both Android and iOS?</h2>
+      <h2 id="question5" class="question">Are the apps available for both Android and iOS?</h2>
       <button class="reveal-button" onclick="toggleAnswer(this)">→</button>
-      <p class="answer hidden">Yes, our apps are available on both Android and iOS platforms. You can download them from the respective app stores.</p>
+      <p id="answer5" class="answer hidden">Yes, our apps are available on both Android and iOS platforms. You can download them from the respective app stores.</p>
     </div>
 
 
