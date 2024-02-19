@@ -184,4 +184,9 @@ body{
     -webkit-appearance: none;
   }
 }
+@media (max-height: 589px){
+  .container{
+    transform: scale(0.7);
+  }
+}
 

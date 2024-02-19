@@ -39,7 +39,7 @@ function translatePage(language) {
         document.querySelector('#firstText3').innerText = 'Our user-friendly tools are designed to make your life easier. Explore our categories:'
         document.querySelector('#calculatorsDescription').innerText = 'Quick and accurate calculations for various scenarios.'
         document.querySelector('#convertersDescription').innerText = 'Effortlessly convert between different units and currencies.'
-        document.querySelector('#firstText4').innerText = 'Ready to get started? Try our Calculator or Currency Converter tools now!'
+        
         document.querySelector('#firstText5').innerText = "If you have any questions or feedback, feel free to contact us. We're here to assist you."
         document.querySelector('#getStartedButton').innerText = 'Get Started'
         document.querySelector('#exploreOurApps').innerText = 'Explore Our Handy Apps'
@@ -50,18 +50,18 @@ function translatePage(language) {
         document.querySelector('#languageApp').innerHTML = '<strong>Language Translator:  </strong><a id="1appDescrition3"> Translate text between different languages effortlessly with our Language Translator.</a>'
         document.querySelector('#clockApp').innerHTML = '<strong>Clock App: </strong><a id="1appDescrition4">Stay punctual with our Clock App. Easily check the time with our simple and intuitive interface.</a>'
         document.querySelector('#imageApp').innerHTML = '<strong>Image Searcher:  </strong><a id="1appDescrition5">Explore visuals effortlessly with our Image Searcher. Find diverse images based on your queries.</a>'
-        document.querySelector('#musicApp').innerHTML = '<strong>Music Player:  </strong><a id="1appDescrition6">Dive into your favorite tunes with our Music Player. Enjoy a user-friendly interface and create playlists for a delightful audio experience.</a>'
+        document.querySelector('#musicApp').innerHTML = "<strong>Music Player:  </strong><a id='1appDescrition6'>Explore your favorite tunes effortlessly with our Music Player. Featuring a user-friendly interface, dive into your music collection with ease.</a>"
 
 
         document.querySelector('#convertersHeader').innerText = 'Converters'
         document.querySelector('#converter1').innerHTML = '<strong>Temperature Converter:</strong> Convert temperatures between Celsius, Fahrenheit, and Kelvin with ease.'
         document.querySelector('#converter2').innerHTML = '<strong>Currency Converter:</strong> Instantly convert currencies for travel or business needs.'
-        document.querySelector('#converter3').innerHTML = '<strong>Weight Converter:</strong> Quickly switch between pounds, kilograms, and ounces.'
+        document.querySelector('#converter3').innerHTML = '<strong>Weight Converter:</strong> Quickly switch between pounds and kilograms.'
 
-        document.querySelector('#calculatorsHeader').innerText = 'Калкулатори'
+        document.querySelector('#calculatorsHeader').innerText = 'Calculators'
         document.querySelector('#calculator1').innerHTML = '<strong>Calculator:</strong> Quickly add, subtract, multiply, and divide numbers with precision.';
         document.querySelector('#calculator2').innerHTML = '<strong>Percentage Calculator:</strong> Easily determine percentages, discounts, and markups for your financial needs.';
-        document.querySelector('#calculator3').innerHTML = '<strong>Interest Rate Calculator:</strong> Calculate interest rates, payments, and savings with accuracy for financial planning.';
+        document.querySelector('#calculator3').innerHTML = '<strong>Interest Rate Calculator:</strong> Interest Rate Calculator: Accurately calculate interest rates, payments, and savings to facilitate financial planning.';
 
         document.querySelector('#newsLetter1').innerText = 'Subscribe to Our Newsletter'
         document.querySelector('#newsLetter2').innerText = 'Stay updated with the latest news and updates from our website.'
@@ -80,9 +80,7 @@ function translatePage(language) {
         document.querySelector('#question4').innerText = 'How often are the currency exchange rates updated in the Currency Converter?'
         document.querySelector('#answer4').innerText = 'Our currency exchange rates are updated in real-time, ensuring accuracy for your conversions.'
 
-        document.querySelector('#question5').innerText = 'Are the apps available for both Android and iOS?'
-        document.querySelector('#answer5').innerText = 'Yes, our apps are available on both Android and iOS platforms. You can download them from the respective app stores.'
-
+      
     } else if (language === 'bg') {
         document.querySelector('h2').innerText = 'Добре дошли в EasyTools';
         document.querySelector('#firstText1').innerText = 'В EasyTools предоставяме набор от удобни калкулатори и конвертори, които да опростят вашите ежедневни задачи.'
@@ -90,7 +88,7 @@ function translatePage(language) {
         document.querySelector('#firstText3').innerText = 'Нашите лесни за използване инструменти са проектирани да направят живота ви по-лесен. Разгледайте нашите категории:'
         document.querySelector('#calculatorsDescription').innerText = 'Калкулатори: Бързи и точни пресмятания за различни сценарии.'
         document.querySelector('#convertersDescription').innerText = 'Конвертори: Лесно преобразуване между различни единици и валути.'
-        document.querySelector('#firstText4').innerText = 'Готови ли сте да започнете? Опитайте нашите калкулатори или инструменти за конвертиране на валути сега!'
+        
         document.querySelector('#firstText5').innerText = 'Ако имате въпроси или обратна връзка, не се притеснявайте да се свържете с нас. Ние сме тук, за да ви помогнем.'
         document.querySelector('#getStartedButton').innerText = 'Започни'
         document.querySelector('#exploreOurApps').innerText = 'Разгледайте нашите полезни приложения'
@@ -100,14 +98,14 @@ function translatePage(language) {
         document.querySelector('#noteApp').innerHTML = '<strong>Бележник: </strong><a id="1appDescrition1">Записвайте бележки, създавайте списъци със задачи и останете организирани с нашето приложение за бележки.</a>'
         document.querySelector('#weatherApp').innerHTML = '<strong>Приложение за времето: </strong><a id="1appDescrition1">Бъдете в крак с последните метеорологични условия и прогнози във вашата област.</a>'
         document.querySelector('#languageApp').innerHTML = '<strong>Преводач: </strong><a id="1appDescrition1">Превеждайте текст между различни езици без усилие с нашия преводач на езици.</a>'
-        document.querySelector('#clockApp').innerHTML = '<strong>Часовник: </strong><a id="1appDescrition1">Останете пунктуални с нашето приложение за часовник. Лесно проверете времето с нашия прост и интуитивен интерфейс.</a>'
+        document.querySelector('#clockApp').innerHTML = '<strong>Часовник: </strong><a id="1appDescrition1">Останете пунктуални с нашият часовник. Лесно проверете времето с нашия прост и интуитивен интерфейс.</a>'
         document.querySelector('#imageApp').innerHTML = '<strong>Търсачка на изображения: </strong><a id="1appDescrition1">Разглеждайте визуални изображения без усилие с нашата търсачка на изображения. Намерете разнообразни изображения въз основа на вашите заявки.</a>'
-        document.querySelector('#musicApp').innerHTML = '<strong>Плейър за музика: </strong><a id="1appDescrition1">Влюбете се в любимите си песни с нашия музикален плейър. Насладете се на потребителски приятен интерфейс и създавайте плейлисти за приятно аудио изживяване.</a>'
+        document.querySelector('#musicApp').innerHTML = '<strong>Плейър за музика: </strong><a id="1appDescrition1">Разглеждайте любимите си мелодии лесно с нашия музикален плейър. С представения потребителски интерфейс експериментирайте в своята музикална колекция с лекота.</a>'
        
         document.querySelector('#convertersHeader').innerText = 'Конвертори:'
         document.querySelector('#converter1').innerHTML = '<strong> Конвертор за температури:</strong> Конвертор за температури: Лесно преобразявайте температури между Целзий, Фаренхайт и Келвин.'
         document.querySelector('#converter2').innerHTML = '<strong>Конвертор за валути:</strong> Мигновено преобразявайте валути за пътуване или бизнес нужди.'
-        document.querySelector('#converter3').innerHTML = '<strong>Конвертор за тегло: </strong> Бързо превключвайте между либри, килограми и унции.'
+        document.querySelector('#converter3').innerHTML = '<strong>Конвертор за тегло: </strong> Бързо превключвайте между либри и килограми.'
         
         document.querySelector('#calculatorsHeader').innerText = 'Калкулатори'
         document.querySelector('#calculator1').innerHTML = '<strong>Калкулатор:</strong> Бързо събирайте, изваждайте, умножавайте и делете числа с прецизност.';
@@ -123,7 +121,7 @@ function translatePage(language) {
 document.querySelector('#answer1').innerText = 'Въведете местоположение, вижте текущото време и прогнозата. Бъдете информирани без усилие!';
 
 document.querySelector('#question2').innerText = 'Мога ли да запазя бележките си на уебсайта?';
-document.querySelector('#answer2').innerText = 'Да, използвайте локално съхранение за удобно запазване на бележки. Забележете, че запазените данни са специфични за устройството и браузъра. Проверете настройките за подробности.';
+document.querySelector('#answer2').innerText = 'Да, използва се локално съхранение за удобно запазване на бележки. Забележете, че запазените данни са специфични за устройството и браузъра. Проверете настройките за подробности.';
 
 document.querySelector('#question3').innerText = 'Личната ми информация защитена ли е в EasyTools?';
 document.querySelector('#answer3').innerText = 'Абсолютно! Вземаме на сериозно поверителността на потребителите. Цялата ви лична информация е кодирана и сигурно съхранявана.';
@@ -131,8 +129,6 @@ document.querySelector('#answer3').innerText = 'Абсолютно! Вземам
 document.querySelector('#question4').innerText = 'Колко често се актуализират валутите в Конвертора на валута?';
 document.querySelector('#answer4').innerText = 'Нашите валути се актуализират в реално време, гарантирайки точност за вашите преобразувания.';
 
-document.querySelector('#question5').innerText = 'Достъпни ли са приложенията както за Android, така и за iOS?';
-document.querySelector('#answer5').innerText = 'Да, нашите приложения са достъпни както за Android, така и за iOS платформи. Можете да ги изтеглите от съответните магазини за приложения.';
 
 
         
