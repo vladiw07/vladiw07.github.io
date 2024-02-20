@@ -61,7 +61,7 @@ function translatePage(language) {
         document.querySelector('#calculatorsHeader').innerText = 'Calculators'
         document.querySelector('#calculator1').innerHTML = '<strong>Calculator:</strong> Quickly add, subtract, multiply, and divide numbers with precision.';
         document.querySelector('#calculator2').innerHTML = '<strong>Percentage Calculator:</strong> Easily determine percentages, discounts, and markups for your financial needs.';
-        document.querySelector('#calculator3').innerHTML = '<strong>Interest Rate Calculator:</strong> Interest Rate Calculator: Accurately calculate interest rates, payments, and savings to facilitate financial planning.';
+        document.querySelector('#calculator3').innerHTML = '<strong>Interest Rate Calculator:</strong>Accurately calculate interest rates, payments, and savings to facilitate financial planning.';
 
         document.querySelector('#newsLetter1').innerText = 'Subscribe to Our Newsletter'
         document.querySelector('#newsLetter2').innerText = 'Stay updated with the latest news and updates from our website.'
